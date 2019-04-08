@@ -87,10 +87,10 @@ public class SysLoginController {
 	/**
 	 * 退出
 	 */
-	@RequestMapping(value = "logout", method = RequestMethod.GET)
+	@RequestMapping(value = "/sys/logout", method = RequestMethod.GET)
 	public String logout() {
 		ShiroUtils.logout();
-		return "redirect:login.html";
+		return "redirect:sysLogin.html";
 	}
 	
 }

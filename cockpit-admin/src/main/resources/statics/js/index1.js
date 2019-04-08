@@ -3,7 +3,8 @@ $(function() {
     $(window).on('resize', function () {
         var $content = $('#larry-tab .layui-tab-content');
         // $content.height($(this).height() - 140);
-        $content.height($(this).height());
+        // $content.height($(this).height());
+        $content.height("100%");
         $content.find('iframe').each(function () {
             $(this).height($content.height());
         });

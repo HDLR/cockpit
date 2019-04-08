@@ -30,24 +30,24 @@ public class SysPageController {
 		return "modules/" + module1 + "/" + module2 + "/" + url;
 	}
 
-	@RequestMapping(value = {"/", "index.html"})
+	@RequestMapping(value = {"/", "sysIndex.html"})
 	public String index(){
-		return "index";
+		return "sysIndex";
 	}
 
-	@RequestMapping("index1.html")
+	@RequestMapping("sysIndex1.html")
 	public String index1(){
-		return "index1";
+		return "sysIndex1";
 	}
 
-	@RequestMapping("login.html")
+	@RequestMapping("sysLogin.html")
 	public String login(){
-		return "login";
+		return "sysLogin";
 	}
 
-	@RequestMapping("main.html")
+	@RequestMapping("sysMain.html")
 	public String main(){
-		return "main";
+		return "sysMain";
 	}
 
 	@RequestMapping("404.html")

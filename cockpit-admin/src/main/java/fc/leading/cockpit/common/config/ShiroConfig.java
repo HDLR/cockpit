@@ -73,7 +73,7 @@ public class ShiroConfig {
     public ShiroFilterFactoryBean shiroFilter(SecurityManager securityManager) {
         ShiroFilterFactoryBean shiroFilter = new ShiroFilterFactoryBean();
         shiroFilter.setSecurityManager(securityManager);
-        shiroFilter.setLoginUrl("/login.html");
+        shiroFilter.setLoginUrl("/sysLogin.html");
         shiroFilter.setUnauthorizedUrl("/");
 
         Map<String, String> filterMap = new LinkedHashMap<>();
@@ -84,7 +84,7 @@ public class ShiroConfig {
         filterMap.put("/swagger-resources/**", "anon");
 
         filterMap.put("/statics/**", "anon");
-        filterMap.put("/login.html", "anon");
+        filterMap.put("/sysLogin.html", "anon");
         filterMap.put("/sys/login", "anon");
         filterMap.put("/favicon.ico", "anon");
         filterMap.put("/captcha.jpg", "anon");
