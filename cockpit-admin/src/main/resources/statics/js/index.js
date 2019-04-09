@@ -40,7 +40,7 @@ var vm = new Vue({
 	data:{
 		user:{},
 		menuList:{},
-		main:"main.html",
+		main:"sysMain.html",
 		password:'',
 		newPassword:'',
         navTitle:"控制台"

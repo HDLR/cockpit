@@ -9,10 +9,6 @@ server:
     context-path: /cockpit-admin
 
 spring:
-  #关闭activiti自动部署扫描
-  activiti:
-    database-schema-update: true
-    check-process-definitions: false
   profiles:
     active: dev
   jackson:

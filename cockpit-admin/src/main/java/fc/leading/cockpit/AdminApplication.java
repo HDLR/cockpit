@@ -14,7 +14,6 @@ import org.springframework.context.annotation.ImportResource;
 
 
 @SpringBootApplication
-//@ImportResource(locations = {"classpath:activiti.cfg.xml"})  //引入xml配置文件
 public class AdminApplication {
 
 	public static void main(String[] args) {

@@ -103,12 +103,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.activiti</groupId>
-			<artifactId>activiti-spring-boot-starter-basic</artifactId>
-			<version>6.0.0-boot2</version>
-		</dependency>
-
-		<dependency>
 			<groupId>org.apache.xmlgraphics</groupId>
 			<artifactId>batik-codec</artifactId>
 			<version>1.7</version>
@@ -132,16 +126,10 @@
 			<version>1.7</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.activiti</groupId>
-			<artifactId>activiti-json-converter</artifactId>
-			<version>6.0.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-starter-data-elasticsearch</artifactId>-->
+		<!--</dependency>-->
 
 	</dependencies>
 

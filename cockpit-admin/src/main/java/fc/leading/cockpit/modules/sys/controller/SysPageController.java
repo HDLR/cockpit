@@ -19,25 +19,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class SysPageController {
-	
-	@RequestMapping("modules/{module}/{url}.html")
-	public String module(@PathVariable("module") String module, @PathVariable("url") String url){
-		return "modules/" + module + "/" + url;
-	}
 
-	@RequestMapping("modules/{module1}/{module2}/{url}.html")
-	public String module2(@PathVariable("module1") String module1, @PathVariable("module2") String module2, @PathVariable("url") String url){
-		return "modules/" + module1 + "/" + module2 + "/" + url;
-	}
-
-	@RequestMapping(value = {"/", "sysIndex.html"})
+	@RequestMapping(value = {"/", "sysIndex1.html"})
 	public String index(){
-		return "sysIndex";
+		return "sysIndex1";
 	}
 
-	@RequestMapping("sysIndex1.html")
+	@RequestMapping("sysIndex.html")
 	public String index1(){
-		return "sysIndex1";
+		return "sysIndex";
 	}
 
 	@RequestMapping("sysLogin.html")
@@ -55,4 +45,18 @@ public class SysPageController {
 		return "404";
 	}
 
+	@RequestMapping("{url}.html")
+	public String module(@PathVariable("url") String url){
+		return url;
+	}
+	
+	@RequestMapping("modules/{module}/{url}.html")
+	public String module(@PathVariable("module") String module, @PathVariable("url") String url){
+		return "modules/" + module + "/" + url;
+	}
+
+	@RequestMapping("modules/{module1}/{module2}/{url}.html")
+	public String module2(@PathVariable("module1") String module1, @PathVariable("module2") String module2, @PathVariable("url") String url){
+		return "modules/" + module1 + "/" + module2 + "/" + url;
+	}
 }
