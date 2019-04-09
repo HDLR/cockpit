@@ -3,7 +3,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/renren_security?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      url: jdbc:mysql://localhost:3306/cockpit?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
       username: root
       password: 123456
       initial-size: 10
@@ -37,12 +37,6 @@ spring:
   ## 该配置和Elasticsearch的elasticsearch.yml中的配置信息有关
   ## spring.data.elasticsearch.cluster-name=zdl
   ## spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
-  data:
-    elasticsearch:
-      cluster-name: seabox
-#      cluster-nodes: 127.0.0.1:9300
-      cluster-nodes: 59.212.43.12:9300
-
 
 ##多数据源的配置，需要引用cockpit-dynamic-datasource
 #dynamic:
